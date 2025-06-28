@@ -3,18 +3,19 @@ import './App.css'
 
 function App() {
   const [profile, setProfile] = useState({
-    name: '',
-    email: '',
-    alamat: '',
-    nomorHp: ''
+    name: 'Sri Wulan - STI202202816',
+    email: 'sriwulan@example.com',
+    alamat: 'Jl. Merdeka No. 123, Yogyakarta',
+    nomorHp: '081234567890'
   })
 
-  useEffect(() => {
-    fetch('http://localhost:3000/api/profile')
-      .then(res => res.json())
-      .then(data => setProfile(data))
-      .catch(err => console.error('Error fetching profile:', err))
-  }, [])
+  // Kalau tidak pakai fetch API, useEffect bisa dihapus
+  // useEffect(() => {
+  //   fetch('http://localhost:3000/api/profile')
+  //     .then(res => res.json())
+  //     .then(data => setProfile(data))
+  //     .catch(err => console.error('Error fetching profile:', err))
+  // }, [])
 
   return (
     <div className="card">
