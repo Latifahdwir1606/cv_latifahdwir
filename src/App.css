@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-Header {
+  background: linear-gradient(135deg, #93c5fd, #c4b5fd);
+  padding: 24px;
+  text-align: center;
+  color: #fff;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.App-Header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+.card {
+  background: white;
+  max-width: 600px;
+  width: 90%;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f1f5f9;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.15);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+  color: #334155;
+  font-size: 17px;
+}
+
+td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #e2e8f0;
+  transition: background-color 0.2s ease;
+}
+
+tr:hover td {
+  background-color: #f9fafb;
+}
+
+td:first-child {
+  font-weight: 600;
+  color: #64748b;
+  width: 140px;
+  user-select: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .card {
+    margin: 30px 16px;
+    padding: 24px 20px;
+  }
+
+  td {
+    font-size: 15px;
+    padding: 12px 8px;
+  }
+
+  td:first-child {
+    width: 100px;
+  }
+
+  .App-Header h1 {
+    font-size: 22px;
+  }
+}
